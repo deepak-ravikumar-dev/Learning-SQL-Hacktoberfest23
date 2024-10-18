@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Crafters</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #e6e8ea; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .screen {
+            background-color: #1a2e38; /* Dark blue-grey background */
+            width: 320px;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Welcome Screen */
+        .welcome-screen {
+            text-align: center;
+        }
+
+        .welcome-screen img {
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        .welcome-screen h2 {
+            font-size: 1.6em;
+            margin: 10px 0;
+        }
+
+        .welcome-screen p {
+            font-size: 0.9em;
+            color: #c2d1d7; /* Light grey text */
+        }
+
+        .button {
+            background-color: #58a6ff; /* Light blue button */
+            color: white;
+            padding: 12px;
+            width: 85%;
+            border: none;
+            border-radius: 8px;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        .button.secondary {
+            background: none;
+            border: 2px solid #58a6ff;
+        }
+
+        /* Home Screen */
+        .home-screen h2 {
+            text-align: left;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .home-screen .search-bar {
+            display: flex;
+            background-color: #204a57;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 8px;
+        }
+
+        .search-input {
+            flex: 1;
+            background: none;
+            border: none;
+            color: #c2d1d7;
+            padding: 8px;
+            outline: none;
+        }
+
+        .search-button {
+            background-color: #58a6ff;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            padding: 8px 16px;
+        }
+
+        .experiences, .featured {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+        }
+
+        .experience, .featured-item {
+            background-color: #204a57; /* Card color */
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            min-width: 120px;
+            color: #ffffff;
+        }
+
+        /* Detail Screen */
+        .detail-screen img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .detail-screen h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .detail-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: #c2d1d7;
+            font-size: 0.9em;
+        }
+
+        .about {
+            color: #c2d1d7;
+            font-size: 0.9em;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .detail-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .detail-buttons .button {
+            width: 45%;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="screen welcome-screen">
+            <img src="https://via.placeholder.com/150" alt="Welcome Image">
+            <h2>Escape the ordinary life</h2>
+            <p>Discover great experiences around you and feel safe!</p>
+            <button class="button">Get Started</button>
+            <button class="button secondary">Login</button>
+        </div>
+
+        <!-- Home Screen -->
+        <div class="screen home-screen">
+            <h2>Let’s Travel</h2>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search for places...">
+                <button class="search-button">Search</button>
+            </div>
+            <h3>Popular Experiences</h3>
+            <div class="experiences">
+                <div class="experience">Sea Diving</div>
+                <div class="experience">Mountain Trip</div>
+                <div class="experience">Beach Adventure</div>
+            </div>
+            <h3>Featured</h3>
+            <div class="featured">
+                <div class="featured-item">Mount Bromo</div>
+                <div class="featured-item">Lake View</div>
+            </div>
+        </div>
+
+        <!-- Detail Screen -->
+        <div class="screen detail-screen">
+            <img src="https://via.placeholder.com/300x150" alt="Panambur Beach">
+            <h2>Panambur Beach</h2>
+            <div class="detail-info">
+                <div>Temperature<br><strong>28°C</strong></div>
+                <div>Pressure<br><strong>1020 hPa</strong></div>
+                <div>Wind Speed<br><strong>20 kmph</strong></div>
+            </div>
+            <div class="about">
+                <p>Panambur Beach is one of the most popular beaches in Mangaluru city. It offers jet ski rides, boating, dolphin viewing, food stalls, night camping, adventure activities and more.</p>
+            </div>
+            <div class="detail-buttons">
+                <button class="button secondary">Site Map</button>
+                <button class="button">Start</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
